@@ -1,142 +1,135 @@
 *{
-    margin: 0;
+  margin: 0;
+  font-family: sans-serif,Roboto;
+  user-select: none;
 }
 body {
-    font-family: sans-serif;
-    font-size: small;
-    cursor: default;
-    font-size: 12px;
+  padding-top: 40px;
+  overflow-x: hidden;
+  width: 100%;
+}
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+nav li:hover {
+  color: forestgreen;
 }
 nav {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 20px;
-    height: 30px;
-    background-color: white;
+  display: flex;
+  position: sticky;
+  top: 20px;
+  justify-content: center;
+
 }
 .border {
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 1px;
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    box-shadow: 5px 5px 5px coral 0.5;
+  display: flex;
+  border-radius: 25px;
+  border-color: black;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
 }
-li {
-    color: rgb(90,90,90);
-    font-weight: bold;
-    list-style: none;
-    padding: 5px;
-}
-li:hover {
-    color: forestgreen;
+.hero-section {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 .main-content {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: start;
-    margin-top: 50px;
-}
-.left-section{
-    padding-right: 20px;
-    padding-left: 10px;
-}
-.left-section p span {
-    color: forestgreen;
+  display: flex;
+  margin-top: 50px;
+  
 }
 .bold {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .text-2 {
-    font-size: 25px;
-    margin-bottom: 20px;
+  font-size: large;
+  margin-bottom: 20px;
 }
 .text-3 {
-    margin-top: 20px;
-    line-height: 2;
-    font-size: 15px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.profile-image{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    object-position:center;
-    border-radius: 50%;
+.title{
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.right-section {
-    padding-right: 20px;
+.project-link {
+  text-decoration: none;
+  color: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(177, 50, 240);
+  padding: 5px;
+  margin-bottom: 40px;
 }
-a {
-    text-decoration: none;
-    color: rgb(196, 136, 241);
-    border-width: 1px;
-    border-radius: 3px;
-    border-color: black;
-    border-style: solid;
-    padding: 5px;
-    transition: box-shadow 0.15s;
-}
-a:hover {
-    box-shadow: 5px 5px 5px rgba(133, 55, 167, 0.15);
-}
+.project-link:hover {
+  box-shadow: 5px 5px 10px rgba(192,192,192,0.5), -5px -5px 10px #ffffff;
 
-
-
+}
+.green {
+  color: forestgreen;
+  font-weight: bold;
+}
 .technology {
-    padding-left: 10px;
-    padding-right: 10px;
+  margin-top: 20px;
 }
-.image-container {
-    display: grid;
-    margin-bottom: 20px;
-    grid-template-columns: 50px 50px;
-    row-gap: 20px;
-    column-gap: 40px;
-    transition: box-shadow 1s,transform 1s;
-}
-.tech-image:hover {
-    transform: skew(2deg);
-    box-shadow: 5px 5px 5px rgba(42, 193, 8, 0.15);
 
+
+/* image styling*/
+.floating-icon {
+  display: flex;
+  position: fixed;
+  left: 10%;
+  bottom: 10px;
+}
+.float {
+  height: 50px;
+  width: 50px;
 }
 .tech-image {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
+}
+.profile-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: right;
+  margin-left: 20px;
 }
 
-/* education detais*/
 
 
 
-@media screen and (max-width: 600px)
-{
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .profile-image {
-        height: 200px;
-        width: 200px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .main-content {
-        margin-top: 20px;
-    }
+
+
+
+
+/* media query*/
+@media screen and (max-width: 812px) {
+  .main-content {
+    display: flex;
+  }
+  .profile-image{
+    height: 100px;
+    width: 100px;
+  }
+  .technology {
+    margin-top: 60px;
+  }
+  
 }
-@media  screen and (max-width: 810px) {
-    .profile-image {
-        height: 150px;
-        width: 150px;
-    }
-    .main-content {
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 630px){
+  .profile-image {
+    height: 90px;
+    width: 90px;
+  }
+
 }
