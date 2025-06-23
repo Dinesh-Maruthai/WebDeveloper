@@ -111,25 +111,3 @@ nav {
 
 
 
-
-/* media query*/
-@media screen and (max-width: 812px) {
-  .main-content {
-    display: flex;
-  }
-  .profile-image{
-    height: 100px;
-    width: 100px;
-  }
-  .technology {
-    margin-top: 60px;
-  }
-  
-}
-@media screen and (max-width: 630px){
-  .profile-image {
-    height: 90px;
-    width: 90px;
-  }
-
-}
